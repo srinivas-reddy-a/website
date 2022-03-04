@@ -1,25 +1,41 @@
-import logo from './logo.svg';
+import React, { useState, useEffect } from "react";
+import Navbar from "./Navbar.jsx";
+import Header from "./Header.jsx";
+import './index.css'
 import './App.css';
+import Lottie from "lottie-react";
+// import splashani from "./splash.json";
 
-function App() {
-  return (
+const App = () => {
+  // const[splash, setSplash] = useState(true);
+
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setSplash(false);
+  //   },3000)
+  // })
+  return(
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* {
+        splash
+        ?<div className="splash">
+          <Lottie 
+            animationData={splashani} 
+            loop={true}
+            autoPlay={true}/>
+        </div>
+        :<div className="gradient__bg">
+            <Navbar />
+            <Header />
+          </div>
+      } */}
+      <div className="gradient__bg">
+            <Navbar />
+            <Header />
+          </div>
+      
     </div>
-  );
+  )
 }
 
 export default App;

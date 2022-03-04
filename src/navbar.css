@@ -1,0 +1,131 @@
+.ak__navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem;
+}
+
+.ak__navbar-links{
+    flex:1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.ak__navbar-links_logo{
+    display: flex;
+    flex-direction: row;
+    margin-right: 2rem;
+}
+
+.ak__navbar-links_logo img{
+    width: 25%;
+    height: 25%;
+}
+.eventOrFestival{
+    width: 10%;
+}
+
+.ak__navbar-links_container{
+    position: absolute;
+    right: 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.ak__navbar-links_container p,
+.ak__navbar-menu_container p{
+    color: #ffffff;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25pox;
+    text-transform: capitalize;
+    margin: 0 1rem;
+    cursor: pointer;
+    height: 70px;
+    width: 70px;
+}
+ 
+
+.ak__navbar-menu{
+    margin-left: 1rem;
+    display: none;
+    position: relative;
+}
+.ak__navbar-menu png{
+    cursor: pointer;
+}
+.ak__navbar-menu_container{
+    z-index: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: end;
+    background: var(--color-footer);
+    padding: 2rem;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    margin-top: 1rem;
+    min-width: 150px;
+    border-radius: 5px;
+    box-shadow: 0 0 5 rgba(0,0,0,0.2);
+}
+
+.ak__navbar-menu_container p{
+    margin: 1rem 0;
+}
+
+.ak__navbar-lottie{
+    width: 65px;
+    height: 65px;
+}
+/* .ak__navbar-lottie__fb{
+    width: 200px;
+    height: 155px;
+} */
+
+@media screen and (max-width: 1050px) {
+    .ak__navbar-links_container{
+        display: none;
+    }
+    .ak__navbar-menu{
+        display: flex;
+    }
+    .ak__navbar-links_logo img{
+        width: 35%;
+        height: 35%;
+    }
+    .eventOrFestival{
+        width: 13%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .ak__navbar{
+        padding: 2rem 4rem;
+    }
+    .ak__navbar-links_logo img{
+        width: 65%;
+        height: 65%;
+    }
+    .eventOrFestival{
+        width: 27%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .ak__navbar{
+        padding: 2rem;
+    }
+    .ak__navbar-menu_container{
+        top: 10px;
+    }
+    .ak__navbar-links_logo img{
+        width: 65%;
+        height: 65%;
+    }
+}
