@@ -1,0 +1,128 @@
+.ak__cta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 2rem;
+    margin: 4rem;
+    border-radius: 1rem;
+    background: #D6ECE1
+}
+
+.ak__cta-content {
+    display: flex;
+    flex-direction: column;
+
+    text-align: left;
+    color: var(--color-white);;
+}
+
+.ak__cta-qr{
+    height: 100px;
+    width: 100px;
+}
+
+.ak__cta-play{
+    height: 150px;
+    width: 150px;
+}
+
+.ak__cta-play img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position:50% 50%;
+}
+
+.ak__cta-qr img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position:50% 50%;
+}
+
+.ak__cta-content p {
+    font-family: var(--font-family);
+    font-size: 12px;
+    line-height: 30px;
+    font-weight: 800;
+    color: black;
+}
+
+.ak__cta-content h3 {
+    font-family: var(--font-family);
+    font-size: 24px;
+    line-height: 45px;
+    font-weight: 800;
+    color: black;
+}
+
+.ak__cta-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 2rem;
+}
+
+.ak__cta-btn button {
+    background: #000;
+    color: #FFFFFF;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+
+    border: none;
+    outline: none;
+    cursor: pointer;
+    min-width: 150px;
+}
+
+@media screen and (max-width: 990px) {
+    .ak__cta {
+        flex-direction: column;
+    }
+
+    .ak__cta-qr{
+        height: 150px;
+        width: 150px;
+    }
+
+    .ak__cta-play{
+        height: 200px;
+        width: 200px;
+    }
+    .ak__cta-btn {
+        margin: 2rem 0 0;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .ak__cta {
+        flex-direction: column;
+    }
+
+    .ak__cta-btn {
+        margin: 2rem 0 0;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .ak__cta {
+        flex-direction: column;
+        margin: 4rem 2rem;
+    }
+
+    .ak__cta-content h3 {
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .ak__cta-btn button {
+        font-size: 14px;
+        line-height: 28px;
+    }
+}

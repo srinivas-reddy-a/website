@@ -1,0 +1,166 @@
+.ak__team_container{
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+.ak__team-banner1, .ak__team-banner2, .ak__team-banner3, .ak__team-banner4 {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+}
+
+.ak__team-banner1{
+    animation: slide1 12s linear infinite;
+}
+.ak__team-banner2{
+    animation: slide2 12s linear infinite;
+}
+.ak__team-banner3{
+    animation: slide3 12s linear infinite;
+}
+.ak__team-banner4{
+    animation: slide4 12s linear infinite;
+}
+
+@keyframes slide1 {
+    0%{
+        visibility: visible;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+
+@keyframes slide2 {
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: visible;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+
+@keyframes slide3 {
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: visible;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+
+@keyframes slide4 {
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+.ak__team-banner-img{
+    width: 120%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: zoom-out 3s linear infinite;
+}
+
+@keyframes zoom-out {
+    100%{
+        width: 100%;
+    }
+    
+}
+
+.ak__team-info{
+    width: 600px;
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    color: #FFFFFF;
+    font-family: var(--font-family);
+    animation: text-up 12s linear infinite;
+    transform: translateY(100px);
+}
+@keyframes text-up {
+    10%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.ak__team-info h1{
+    margin-bottom: 20px;
+}
+
+.ak__team-info p{
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 60px;
+}
+.ak__team-info span{
+    background: var(--color-green);
+    height: 1px;
+    width: 100px;
+    position: absolute;
+    left: 0;
+}
+
+.ak__team-info01{
+    animation-delay: 0s;
+}
+
+.ak__team-info02{
+    animation-delay: 3s;
+}
+
+.ak__team-info03{
+    animation-delay: 6s;
+}
+
+.ak__team-info04{
+    animation-delay: 9s;
+}

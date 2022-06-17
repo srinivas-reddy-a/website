@@ -1,57 +1,26 @@
 import React, { useState } from "react";
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import './navbar.css';
-import fb from './fb.json';
-import linkedin from './linkedin.json';
-import twitter from './twitter.json'
-import Lottie from "lottie-react";
-import brand from './brand.png'
+import brand from './brand.png';
+import icon from './arraykart_icon.png';
 import festival from './republic.json';
+import brand_green from './assets/company_name_green.png'
 
 
 
 
 const Navbar = () =>{
     const [toogleMenu, setToggleMenu] = useState(false);
-
-    const Menu = () =>(
-        <>
-            <p>
-                <a href='http://www.facebook.com/arraykartofficial' target="_blank">
-                    <Lottie 
-                        className="ak__navbar-lottie__fb"
-                        animationData={fb} 
-                        loop={true}
-                        autoPlay={true}/>
-                </a>
-            </p>
-            <p>
-                <a href='https://www.linkedin.com/company/arraykart/' target="_blank">
-                    <Lottie 
-                        className="ak__navbar-lottie"
-                        animationData={linkedin} 
-                        loop={true}
-                        autoPlay={true}/>
-                </a>
-            </p>
-            <p>
-                <a href='https://twitter.com/ArrayKart' target="_blank">
-                <Lottie 
-                        className="ak__navbar-lottie"
-                        animationData={twitter} 
-                        loop={true}
-                        autoPlay={true}/>
-                </a>
-            </p>
-        </>
-    )
-
     return (
         <div className="ak__navbar">
             <div className="ak__navbar-links">
                 <div className="ak__navbar-links_logo">
+                    {/* <img src={icon} alt="icon" id="icon"></img> */}
+                    <img src={brand_green} alt="company name"></img>
+                    {/* <h1 className="glow">
+                        arraykart
+                    </h1> */}
 
-                        <img src={brand} alt="logo"></img>
                         {/* for any event  */}
                         {/* <Lottie 
                             className="eventOrFestival"
@@ -60,20 +29,32 @@ const Navbar = () =>{
                         autoPlay={true}/> */}
                 </div>
                 <div className="ak__navbar-links_container">
-                    <Menu />
+                    <p><a href="#home" className="ak__navbar-links_container-text">Home</a></p>
+                    <p><a href="#about" className="ak__navbar-links_container-text">About Us</a></p>
+                    <p><a href="#services" className="ak__navbar-links_container-text">Services</a></p>
+                    <p><a href="#vision" className="ak__navbar-links_container-text">Vision</a></p>
+                    <p><a href="#blog" className="ak__navbar-links_container-text">Blogs</a></p>
+                    {/* <p><a href="#team">Team</a></p> */}
+                    {/* <p><a href="#testimonial">Testimonial</a></p> */}
+                    <p><a href="#footer" className="ak__navbar-links_container-text">Contact Us</a></p>
                 </div>
             </div>
             <div className="ak__navbar-menu">
                 {
                     toogleMenu
-                     ? <RiCloseLine color="#fff" size={27} onClick={() => setToggleMenu(false)} />
-                     : <RiMenu3Line color="#fff" size={27} onClick={() => setToggleMenu(true)} />
+                     ? <RiCloseLine color="#000" size={27} onClick={() => setToggleMenu(false)} />
+                     : <RiMenu3Line color="#000" size={27} onClick={() => setToggleMenu(true)} />
                 }
                 {
                     toogleMenu && (
                         <div className="ak__navbar-menu_container scale-up_center" >
                             <div className="ak__navbar-menu_container-links">
-                                <Menu />
+                                <p><a href="#home" className="ak__navbar-links_container-text">Home</a></p>
+                                <p><a href="#about" className="ak__navbar-links_container-text">About Us</a></p>
+                                <p><a href="#services" className="ak__navbar-links_container-text">Services</a></p>
+                                <p><a href="#vision" className="ak__navbar-links_container-text">Vision</a></p>
+                                <p><a href="#blog" className="ak__navbar-links_container-text">Blogs</a></p>
+                                <p><a href="#footer" className="ak__navbar-links_container-text">Contact Us</a></p>
                             </div>
 
                         </div>
